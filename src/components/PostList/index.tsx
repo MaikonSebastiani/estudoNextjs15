@@ -13,7 +13,7 @@ export function PostList({ posts }: PostListProps) {
           <strong>{post.title}</strong>
           <p>{post.body}</p>
           <small>
-            <b>User ID:</b> {post.userId}
+            <strong>User ID:</strong> {post.userId}
           </small>
         </li>
       ))}

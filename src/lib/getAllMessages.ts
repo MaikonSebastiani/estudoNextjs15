@@ -1,3 +1,5 @@
+'use server';
+
 import { openDb } from './db';
 import { MessageData } from '@/types/message';
 
