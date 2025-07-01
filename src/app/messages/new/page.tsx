@@ -1,4 +1,5 @@
 'use client';
+import Header from "@/components/Header";
 import { saveMessageSqlite } from "@/lib/saveMessageSqlite";
 import Link from "next/link";
 import { useState, useTransition } from "react";
@@ -30,10 +31,9 @@ export default function NewMessagePage() {
 
   return (
     <div className="max-w-4xl mx-auto p-4">
-      <div className="flex items-center">
-        <h1 className="text-2xl font-bold">Nova Mensagem</h1>
-        <Link href="/messages" className="text-blue-500 hover:text-blue-700 block inline-block ml-4">Voltar</Link>
-      </div>
+      <Header>
+        Nova Mensagem
+      </Header>
 
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
